@@ -1,0 +1,202 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lettrine}
+\usepackage[left=35mm,right=35mm,top=0.8in,bottom=0.7in]{geometry}
+\usepackage{graphicx} 
+\usepackage{indentfirst}
+\usepackage{amsmath}
+
+\begin{document}
+\title{Twierdzenie Pitagorasa}
+
+\begin{Huge}\textbf{Twierdzenie Pitagorasa}\end{Huge}
+\\\\
+\lettrine[lines=1]{T}wierdzenie Pitagorasa – jest twierdzeniem geometrii euklidesowej, które w naszym
+(zachodnio-europejskim) kręgu kulturowym przypisywane jest żyjącemu w VI wieku p.n.e.greckiemu matematykowi i filozofowi Pitagorasowi, chociaż niemal pewne jest, że znali je przed nim starożytni Egipcjanie. Wiadomo też, że jeszcze przed Pitagorasem znano je w starożytnych Chinach, Indiach i Babilonii.
+
+
+\section{Teza}
+\begin{itemize}
+\item \emph{W dowolnym trójkącie prostokątnym, suma pól kwadratów zbudowanych na
+przyprostokątnych trójkąta prostokątnego równa jest polu kwadratu zbudowanego na
+przeciwprostokątnej tego trójkąta.}
+\begin{center}
+lub
+\end{center}
+\item \emph{W trójkącie prostokątnym suma kwadratów długości przyprostokątnych jest równa
+kwadratowi długości przeciwprostokątnej tego trójkąta. }
+\end{itemize}
+
+
+\section{Interpretacja}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]k
+\caption{Interpretacja twierdzenia Pitagorasa}
+\label{fig:obrazek k}
+\end{figure}
+
+\indent Oto interpretacja geometryczna: jeżeli na bokach trójkąta prostokątnego zbudujemy
+kwadraty, to suma pól kwadratów zbudowanych na przyprostokątnych tego trójkąta jest
+równa polu kwadratu zbudowanego na przeciwprostokątnej. 
+
+\section{Dowody}
+Liczba różnych dowodów twierdzenia Pitagorasa jest przytłaczająca, według
+niektórych źródeł przekracza 350. Euklides w Elementach podaje ich osiem, kolejne
+pojawiały się na przestrzeni wieków i pojawiają aż po dni dzisiejsze.
+Niektóre z dowodów są czysto algebraiczne (jak dowód z podobieństwa trójkątów),
+inne mają formę układanek geometrycznych (prawdopodobny dowód Pitagorasa), jeszcze
+inne oparte są o równości pól pewnych figur. Zaprezentuje tu jedynie dwa wybrane, najbardziej popularne dowody:
+
+\begin{enumerate}
+  \item Dowód układanka
+  \item Dowód przez podobieństwo
+\end{enumerate}
+
+\newpage
+
+\subsection{Dowód układanka}
+Dany jest trójkąt prostokątny o bokach długości \textit{a,b i c} jak rysunku z lewej.
+Konstruujemy kwadrat o boku długości \textit{a + b} w sposób ukazany na rysunku z lewej, a
+następnie z prawej. Z jednej strony pole kwadratu równe jest sumie pól czterech trójkątów
+prostokątnych i kwadratu zbudowanego na ich przeciwprostokątnych, z drugiej zaś równe jest
+ono sumie pól tych samych czterech trójkątów i dwóch mniejszych kwadratów zbudowanych
+na ich przyprostokątnych. Stąd wniosek, że pole kwadratu zbudowanego na
+przeciwprostokątnej jest równe sumie pól kwadratów zbudowanych na przyprostokątnych. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]l
+\caption{Dowód twierdzenia Pitagorasa}
+\label{fig:obrazek l}
+\end{figure}
+
+\indent Szczepan Jeleński w książce \textit{Śladami Pitagorasa} przypuszcza, że w ten sposób mógł
+udowodnić swoje twierdzenie sam Pitagoras. \\
+\indent Powyższy dowód (Rys.\ref{fig:obrazek l}), choć prosty, nie jest elementarny w tym sensie, że jego poprawność
+wymaga uprzedniego uzasadnienia, że pole kwadratu złożonego z trójkątów i mniejszych
+kwadratów jest równe sumie pól tych figur. Może się to wydawać oczywiste, jednak dowód
+tego faktu wymaga uprzedniego zdefiniowania pola, na przykład poprzez konstrukcję miary
+Jordana. 
+
+\subsection{Dowód przez podobieństwo}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]m
+\caption{Dowód twierdzenia Pitagorasa przez podobieństwo}
+\label{fig:obrazek m}
+\end{figure}
+
+Jest to jeden z dowodów podanych przez Euklidesa, wykorzystuje on podobieństwo
+trójkątów. Zauważmy, że na rysunku obok trójkąty: duży - $\Delta$ABC, różowy - $\Delta$ADC i
+niebieski - $\Delta$DBC są podobne. Niech |AB| = c, |BC| = a i |AC| = b. Można napisać
+proporcje:
+\begin{displaymath}
+\frac{|DB|}{a} = \frac{a}{c}
+\end{displaymath}
+\begin{displaymath}
+\frac{|AD|}{b} = \frac{b}{c}
+\end{displaymath}
+
+\indent Stąd:
+
+\begin{center} 
+a$^{2}$ = $c\cdot|DB|$\\
+b$^{2}$ = $c\cdot|AD|$
+\end{center}
+
+\indent I po dodaniu stronami:
+
+\begin{displaymath}
+a^{2} + b^{2} = c\cdot |DB| + c\cdot |AD| = c (|DB|\cdot |AD|) = c^{2}
+\end{displaymath}
+
+
+\section{Twierdzenie odwrotne}
+
+\subsection{Teza}
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm]n
+\caption{Odwrotne twierdzenie Pitagorasa}
+\label{fig:obrazek n}
+\end{figure}
+\emph{Jeśli dane są trzy dodatnie liczby a,b i c takie, że $a^{2} + b^{2} = c^{2}$, to istnieje trójkąt o
+bokach długości a,b i c, a kąt między bokami o długości a i b jest prosty.}
+\\\\
+\indent Najprawdopodobniej twierdzenie to wykorzystywane było w wielu starożytnych
+kulturach Azji (Chinach, Indiach, Babilonii) i Egipcie do praktycznego wyznaczania kąta
+prostego. Wystarczy bowiem zbudować trójkąt o bokach długości 3, 4 i 5 jednostek, aby
+uzyskać kąt prosty między bokami o długościach 3 i 4. 
+
+\subsection{Dowód}
+Twierdzenie to można udowodnić na przykład metodą sprowadzenia do sprzeczności
+lub przy pomocy twierdzenia cosinusów. 
+
+\section{Uogólnienia}
+Pewne uogólnienia twierdzenia Pitagorasa zostały podane już przez Euklidesa w jego
+elementach: jeśli zbuduje się figury podobne na bokach trójkąta prostokątnego, to suma pól
+powierzchni dwóch mniejszych będzie równa polu powierzchni największej figury. 
+
+\subsection{Twierdzenie cosinusów}
+Uogólnienie twierdzenia Pitagorasa na dowolne, niekoniecznie prostokątne, trójkąty
+nosi nazwę twierdzenia cosinusów (\ref{eq:eps}) i znane było już w starożytności:
+Jeśli w trójkącie o bokach długości \textit{a,b i c} oznaczyć przez $\gamma$ miarę kąta leżącego naprzeciw
+boku \textit{c}, to prawdziwa jest równość: 
+
+\begin{equation}
+a^{2} + b^{2} - 2\textit{ab}cos\gamma = c^{2}
+\label{eq:eps}
+\end{equation}
+
+\subsection{Twierdzenie Dijkstry o trójkątach}
+Trywialny wniosek z twierdzenia cosinusów zgrabnie sformułował Edsger Dijkstra:\\\\
+\emph{Jeżeli w dowolnym trójkącie naprzeciw boków długości a,b i c znajdują się odpowiednio kąty
+$\alpha,\beta,\gamma,$ to zachodzi równość: }
+
+\begin{displaymath}
+sgn(\alpha+\beta-\gamma) = sgn(a^{2}+b^{2}-c^{2})
+\end{displaymath}
+\indent gdzie $sgn$ oznacza funkcje signum.
+
+\newpage
+
+\section{Bibliografia}
+W poniższej tabeli (\ref{tabela}) znajdują się autorzy i prace wykorzystane w tym tekście.
+\begin{table}[h]
+\caption{Bibliografia}
+\label{tabela}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Autor} & \textbf{Tytuł}\\ \hline
+Szczepan Jeleński & Śladami Pitagorasa \\ \hline
+Marek Piasecki & Wzór Pitagorasa \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+\end{document}
